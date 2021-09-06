@@ -1,0 +1,76 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  cursor: default;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.main-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 150px 30px 1fr 1fr 1fr;
+      grid-template-rows: 150px 30px 1fr 1fr 1fr;
+}
+
+.main-container .head {
+  background-color: burlywood;
+  text-align: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / span 4;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+  padding: 1em 0 0;
+}
+
+.main-container .head h1 {
+  font-family: 'Monoton', cursive;
+  font-weight: 550;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.main-container .head h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container .navigation {
+  background-color: #F5DEB3;
+  text-align: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / span 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / span 1;
+}
+
+.main-container .navigation a:link {
+  text-decoration: none;
+  padding: 0 1rem 0;
+  cursor: pointer;
+}
+
+.main-container .slideshow {
+  background-color: whitesmoke;
+  margin: 20px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 /span 2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
+  grid-row: 3 / span 4;
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.main-container .slideshow .carousel-inner img {
+  padding: 30px;
+}
+/*# sourceMappingURL=index.css.map */

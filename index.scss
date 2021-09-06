@@ -1,0 +1,61 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    cursor: default;
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px 30px 1fr 1fr 1fr;
+
+    .head
+    {
+        background-color: burlywood;
+        text-align: center;
+        grid-column: 1 / span 4;
+        grid-row: 1 / 1 ;
+        padding: 1em 0 0;
+        h1{
+            font-family: 'Monoton', cursive;
+            font-weight: 550 ;
+            font-size: 50px;
+            margin-bottom: 0;
+        }
+        
+        h2{
+            font-family: 'Lobster', cursive;
+            font-size: 30px;
+            margin:0;
+            padding: 0;
+        }
+    }
+
+    .navigation{
+        background-color: #F5DEB3;
+        text-align: center;
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 1;
+        a:link{
+            text-decoration: none;
+            padding: 0 1rem 0;
+            cursor:pointer;
+        }
+    }
+
+    .slideshow
+    {
+        background-color: whitesmoke;
+        margin: 20px;
+        grid-column: 2 /span 2;
+        grid-row: 3 / span 4;
+        box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+        .carousel-inner{
+            img{
+                padding:30px;
+                
+            }
+        }
+    }
+}
